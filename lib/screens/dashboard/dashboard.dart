@@ -58,14 +58,12 @@ class _DashboardScreenState extends State<DashboardScreen> {
     super.initState();
   }
 
-  
-
   @override
   Widget build(BuildContext context) {
     return const Responsive(
       mobile: DashboardMobile(),
       tablet: DashboardTablet(),
-      desktop: DashboardDesktop(),
+      desktop: DashboardMobile(),
     );
   }
 }
